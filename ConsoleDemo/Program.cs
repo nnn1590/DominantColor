@@ -1,7 +1,7 @@
 ﻿using System;
 ﻿using System.IO;
 using System.Drawing;
-using System.Windows.Forms; 
+using System.Windows.Forms;
 using DominantColor;
 using Color = System.Drawing.Color;
 using Image = System.Drawing.Image;
@@ -21,7 +21,7 @@ namespace ConsoleDemo {
             int returnCode = 0;
             string[] files;
             if (inputfilenames == null) {
-                OpenFileDialog dialog = new OpenFileDialog(); 
+                OpenFileDialog dialog = new OpenFileDialog();
                 dialog.Filter = "All Supported Files (*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.exif;*.tiff)|*.png;*.jpg;*.jpeg;*.gif|PNG Files (*.png)|*.png|JPEG Files (*.jpg;*.jpeg)|*.jpg;*.jpeg|Bitmap Images (*.bmp)|*.bmp|GIF Files (*.gif)|*.gif|EXIF Files (*.exif)|*.exif|TIFF Files (*.tiff)|*.tiff|All Files (*.*)|*.*";
                 dialog.Multiselect = true;
                 dialog.CheckFileExists = true;
